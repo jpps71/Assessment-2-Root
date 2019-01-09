@@ -1,0 +1,369 @@
+body {
+    background-color: #301934;
+    color: #ffffff;
+    text-align: center;
+    width: 98%;
+    margin: auto;
+    min-width: 600px;
+    max-width: 2000px
+}
+html, body {
+    max-width: 100%;
+	max-height: 100%;
+    overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+#mainpageTitle{
+	font-size: 72px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+}
+/*#region Main_Page_Buttons*/
+#mBT{
+	left: 47%;
+	top: 2rem;
+}
+#mBL{
+	top: 27rem;
+	left: 4%;
+}
+#mBR{
+	top: 27rem;
+	left: 89%;
+}
+#mBRW{
+	top: 27rem;
+	left: 92%;
+}
+#mBB{
+	top: 51.5rem;
+	left: 46%;
+}
+#mBBL{
+	top: 51.5rem;
+	left: 47.5%;
+}	
+#nAT{
+	left: 45%;
+}
+#nAL{
+	transform: rotate(270deg);
+	top: 28.2rem;
+	left: -2.7rem;
+}
+#nAR{
+	transform: rotate(90deg);
+	top: 28rem;
+	left: 93.5%;
+}
+#nAB{
+	transform: rotate(180deg);
+	top: 55rem;
+	left: 46%;
+}
+#topButtonAni{ 
+	transition: all .2s ease-in-out; 
+}
+#topButtonAni:hover{ 
+	transform: scale(1.1); 
+	
+}
+#leftButtonAni{ 
+	transition: all .2s ease-in-out; 
+}
+#leftButtonAni:hover{ 
+	transform: translate(6rem,-3.6rem) scale(1.1); 
+
+}
+#rightButtonAni{ 
+	transition: all .2s ease-in-out; 
+}
+#rightButtonAni:hover{ 
+	transform: translate(-6rem,-3.6rem) scale(1.1);  
+	
+}
+#bottomButtonAni{ 
+	transition: all .2s ease-in-out; 
+}
+#bottomButtonAni:hover{ 
+	transform: translate(0rem,-6rem) scale(1.1);  
+	
+}
+.mainButton {
+	font-size: 36px;
+	position: absolute;
+	color: #ffffff;
+}
+.navArrow{
+	position: absolute;
+	width: 10rem;
+	height: 5rem;
+}
+/*#endregion */
+/*#region Contact Page*/
+#contactTitle{
+	position:relative;
+	font-size: 72px;
+	right: 3rem;
+}
+#bugTitle{
+	position:relative;
+	font-size: 72px;
+	right: 1rem;
+}
+.contactSect{
+	position: absolute;
+	top: 10rem;
+	right: 86.5rem;
+	font-size: 36px;
+	color: #ffffff;
+}
+.bugReportSect{
+	position: absolute;
+	top: 30rem;
+	right: 85rem;
+	font-size: 36px;
+}
+.whiteLink{
+	color: #ffffff;
+}
+/*#endregion */
+
+/*#region Watchlist*/
+#theWatchListContainer{
+    position: absolute;
+    list-style: none;
+    text-align: left;
+    top: 20%;
+    left: 18%;
+    height: 70%;
+    width: 70%;
+    overflow: hidden;
+    overflow-y: scroll;
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #ffffff;
+}
+#watchListTitle{
+    position: absolute;
+    font-size: 56px;
+    text-decoration: underline;
+    font-weight: bold; 
+    text-align: left;
+    left: 18%;
+    top: 10%;
+}
+#theWatchListContainer > li {
+    font-size: 36px;
+    text-align: center;
+    padding: 5px 5px;
+    border-bottom: 1px solid #ffffff;
+}
+#theWatchListContainer > li > a > img {
+    position: absolute;
+    left: 0%;
+ }
+#theWatchListContainer > li > a{
+    color: white;
+ }
+#theWatchListContainer > li > a > p {
+    position: relative;
+    padding: 5px 5px;
+}
+#watchListDivide{
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    width: 70%;
+}
+
+/*#endregion */
+
+/*#region Item-Pages*/
+#itemMBT {
+    left: 45.5%;
+    top: 2rem;
+}
+#itemImage {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 350px;
+    height: 450px;
+}
+#listName{
+    position: absolute;
+    top: -1rem;
+    left: 5%;
+    font-size: 52px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#watchlistButton {
+    position: absolute;
+    top: 75%;
+    left: 8%;
+    background-color: rebeccapurple;
+    border-color: white;
+    color: white;
+    transform: scale(1.8);
+}
+.descriptionBox {
+    text-align: left;
+    position: absolute;
+    top: 18%;
+    left: 25%;
+    border: 2px solid #ffffff;  
+    width: 50%;
+    height: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    overflow-y: scroll;
+}
+#descTitle {
+    position: relative;
+    width: 60%;
+    left: 2%;
+}
+#descContent {
+    position: relative;
+    width: 90%;
+    left: 2%;
+}
+.rgArea {
+    text-align: left;
+    position: absolute;
+    top: 18%;
+    left: 77%;
+    border: 2px solid #ffffff;
+    width: 20%;
+    height: 50%;
+}
+.ratingClass{
+    position: relative;
+    left: 3%;
+    top: 2%;
+}
+.genreClass {
+    position: relative;
+    left: 3%;
+    top: 35%;
+}
+.trailerContainer {
+    position: absolute;
+    text-align: left;
+    left: 25%;
+    top: 68%;
+}
+/*#endregion */ 
+
+/*#region The Index*/
+#indexMBL {
+    top: 1rem;
+    left: 4%;
+}
+
+#indexNAL {
+    transform: rotate(270deg);
+    top: 2.5rem;
+    left: -2.7rem;
+}
+
+#indexHomeButtonAni {
+    transition: all .2s ease-in-out;
+}
+#indexHomeButtonAni:hover {
+    transform: translate(6rem,-0.6rem) scale(1.1);
+}
+#theIndexContainer {
+    position: absolute;
+    list-style: none;
+    text-align: left;
+    top: 20%;
+    height: 78%;
+    width: 99%;
+    overflow: hidden;
+    overflow-y: scroll;
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #ffffff;
+}
+#theIndexContainer > li {
+    display: inline-table;
+    width: 19.8%;
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #ffffff; 
+}
+
+#theIndexContainer > li:hover {
+    color:white;
+}
+
+#theIndexContainer > li > a {
+    color: white;
+}
+#theIndexContainer > li:nth-child(odd){
+    clear: left;
+}
+
+#theIndexContainer > li > a > img {
+    height: 15rem;
+    width: 13rem;
+}
+
+#theIndexContainer > li > a > p {
+    padding: 5px 5px;
+    
+}
+#indexTitle{
+    position: absolute;
+    top: 0%;
+    font-size: 56px;
+    left: 41%;
+    text-decoration: underline;
+}
+.listCustomiseButtons {
+    position: relative;
+    float: left;
+    background-color: rebeccapurple;
+    color: white;
+    border: 1px solid #ffffff;
+    padding: 10px 24px;
+    width: 20%;
+    font-size: 28px;
+    top: 9rem;
+}
+.listCustomiseButtons button:not(:last-child){
+    border-right: none;/*Prevents a Double border from occuring*/
+}
+
+/*This will clear all the floats*/
+.listCustomiseButtons:after{
+    content: "";
+    clear: both;
+    display: inline-table;
+}
+
+/*And why not add a hover background colour because we can*/
+.listCustomiseButtons:hover {
+    background-color: purple;
+}
+#searchTab{
+    position: absolute;
+    border: 2px solid #ffffff;
+    background-color: rebeccapurple;
+    top: 20.5%;
+    left: 79.3%;
+    width: 19.6%
+}
+#searchTab > input{
+    position: relative;
+    top: 85%;
+    width: 90%;
+}
