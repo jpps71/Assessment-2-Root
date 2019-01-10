@@ -1,49 +1,49 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>The Anime Index</title>
-    <link rel="stylesheet" href="..\css\styles.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-</head>
-<body>
+<!DOCTYPE html><!--States document type as HTML-->
+<html><!--tag to encompass html-->
+<head><!--Holds the head elements-->
+    <title>The Anime Index</title><!--Website Title shows in tab name etc-->
+    <link rel="stylesheet" href="..\css\styles.css" /><!--Links css style sheet to html page-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!--links jquery library to html page-->
+</head><!--Closes head tag-->
+<body><!--Holds the body elements-->
     <nav>
         <div id="indexHomeButtonAni">
-            <a href="../index.html"><img class="navArrow" id="indexNAL" src="../assets/Images/Arrow.png"/> <p class="mainButton" id="indexMBL">Home</p></a>
+            <a href="../index.html"><img class="navArrow" id="indexNAL" src="../assets/Images/Arrow.png" /> <p class="mainButton" id="indexMBL">Home</p></a><!--Another navigation button-->
         </div>
     </nav>
-    <div id="theIndex">
-        <h1 id="indexTitle">The Index</h1>
-        <div id="customContainer">
-            <button class="listCustomiseButtons" onclick="indexPopularFilter()">Popular</button>
-            <button class="listCustomiseButtons" id="newFilterButton" onclick="newSort()">Newly Added First</button>
-            <button class="listCustomiseButtons" onclick="movieFilter()">Movies</button>
-            <button class="listCustomiseButtons" onclick="comingSoonFilter()">Coming Soon</button>
-            <button class="listCustomiseButtons" id="searchButton" onclick="searchAppear()">Search</button>
-            <div id="searchTab">
-                <h3>Enter Anime Name In The Search Bar Below</h3>
-                <input id="searchInput" type="search" value="" />
-                <input id="searchSubmit" type="submit" value="Search" onclick="searchEngine('0')" />
-                <input id="searchClear" type="submit" value="Clear Search" onclick="searchEngine('1')" />
+    <div id="theIndex"><!--Create div block element-->
+        <h1 id="indexTitle">The Index</h1><!--The Index page title-->
+        <div id="customContainer"><!--Create div block element-->
+            <button class="listCustomiseButtons" id="popFilterButton" onclick="indexPopularFilter()">Most Popular</button><!--Popular sort button-->
+            <button class="listCustomiseButtons" id="newFilterButton" onclick="newSort()">Newly Added First</button><!--Order of date added sort button-->
+            <button class="listCustomiseButtons" onclick="movieFilter()">Movies</button><!--Movie filter-->
+            <button class="listCustomiseButtons" onclick="comingSoonFilter()">Coming Soon</button><!--Comming soon Filter-->
+            <button class="listCustomiseButtons" id="searchButton" onclick="searchAppear()">Search</button><!--Search tab activating button-->
+            <div id="searchTab"><!--Create div block element-->
+                <h3>Enter Anime Name In The Search Bar Below</h3><!--Search tab title/instructions-->
+                <input id="searchInput" type="search" value="" /><!--Search bar input type-->
+                <input id="searchSubmit" type="submit" value="Search" onclick="searchEngine('0')" /><!--Search input type submit allowing for searching-->
+                <input id="searchClear" type="submit" value="Clear Search" onclick="searchEngine('1')" /><!--Search input tyoe submit allowing the clearing of a search-->
             </div>
         </div>
-        <div>
+        <div><!--Create div block element-->
             <ul id="theIndexContainer">
-                <li id="listItem" popVal="2" isMovie="0" isComingSoon="0"><a href="Item Pages/Overlord - Item Page.html"><img src="../assets/Images/Overlord.jpg" /><p>Overlord</p></a></li>
+                <li id="listItem" popVal="2" isMovie="0" isComingSoon="0" orderAdded="1"><a href="Item Pages/Overlord - Item Page.html"><img src="../assets/Images/Overlord.jpg" /><p>Overlord</p></a></li><!--Index list item, holds unique image, name, page link and attribute values-->
 
-                <li id="listItem" popVal="0" isMovie="0" isComingSoon="0"><a href="Item Pages/Sword Art Online Alicization - Item Page.html"><img src="../assets/Images/Sword Art Online Alicization.jpg" /><p>Sword Art Online Alicization</p></a></li>
+                <li id="listItem" popVal="0" isMovie="0" isComingSoon="1" orderAdded="2"><a href="Item Pages/Sword Art Online Alicization - Item Page.html"><img src="../assets/Images/Sword Art Online Alicization.jpg" /><p>Sword Art Online Alicization</p></a></li>
 
-                <li id="listItem" popVal="1" isMovie="1" isComingSoon="1"><a href="Item Pages/Your Lie In April - Item Page.html"><img src="../assets/Images/Your Lie In April.jpg" /><p>Your Lie In April</p></a></li>
+                <li id="listItem" popVal="1" isMovie="1" isComingSoon="1" orderAdded="3"><a href="Item Pages/Your Lie In April - Item Page.html"><img src="../assets/Images/Your Lie In April.jpg" /><p>Your Lie In April</p></a></li>
 
-                <li id="listItem" popVal="3" isMovie="0" isComingSoon="0"><a href="Item Pages/Ancient Magus Bride - Item Page.html"><img src="../assets/Images/Ancient Magus Bride.jpg" /><p>Ancient Magus Bride</p></a></li>
+                <li id="listItem" popVal="3" isMovie="0" isComingSoon="0" orderAdded="4"><a href="Item Pages/Ancient Magus Bride - Item Page.html"><img src="../assets/Images/Ancient Magus Bride.jpg" /><p>Ancient Magus Bride</p></a></li>
 
-                <li id="listItem" popVal="4" isMovie="1" isComingSoon="0"><a href="Item Pages/Dragon Ball Super - Item Page.html"><img src="../assets/Images/Dragon Ball Super.jpg" /><p>Dragon Ball Super</p></a></li>
-            </ul>
+                <li id="listItem" popVal="4" isMovie="1" isComingSoon="0" orderAdded="5"><a href="Item Pages/Dragon Ball Super - Item Page.html"><img src="../assets/Images/Dragon Ball Super.jpg" /><p>Dragon Ball Super</p></a></li>
+            </ul><!--The Index list COntainer-->
         </div>
     </div>
 
 
 
 
-    <script src="..\js\main.js"></script>
-</body>
-</html>
+    <script src="..\js\main.js"></script><!--Links the javascript file to html page-->
+</body><!--Closes body tag-->
+</html><!--Closes html tag-->

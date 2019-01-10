@@ -1,448 +1,455 @@
-html {
-    font-size: 90%;
+html {/*Accesses Html Tag*/
+    font-size: 90%;/*Sets default font-size to 90%*/
 }
-body {
-    background-color: #301934;
-    color: #ffffff;
-    text-align: center;
-    width: 100vw;
-    margin: auto;
-    min-width: 20vw;
-    max-width: 100vw;
+body { /*Accesses Body Tag*/
+    background-color: #301934;/*Sets background colour to dark purple*/
+    color: #ffffff;/*Sets default text color to white*/
+    text-align: center;/*Sets default text alignment to center*/
+    width: 100vw;/*Sets body width to current window width*/
+    margin: auto;/*Automates margins*/
+    min-width: 20vw;/*Sets the minimum width to 20% the window width*/
 }
-html, body {
-    max-width: 100vw;
-	max-height: 100vh;
-    overflow-x: hidden;
-	overflow-y: hidden;
+html, body { /*Access html and body*/
+    max-width: 100vw; /*Sets the maximum width to 100% window width or viewport*/
+    max-height: 100vh; /*Sets the maximum height to 100% window height or viewport*/
+    overflow-x: hidden;/*Hides x overflow*/
+    overflow-y: hidden;/*Hides y overflow*/
 }
 
-#mainpageTitle{
-	font-size: 72px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -100%);
+#mainpageTitle { /*# Access the item with the id specififed, organises main page title*/
+    font-size: 72px; /*Set font-size*/
+    position: absolute; /*Sets positioning to absolute*/
+    top: 50%; /*Moves Object Relative to the top of the window*/
+    left: 50%; /*Moves Object Relative to the left side of the window*/
+    transform: translate(-50%, -100%);/*Translates the main button to center it*/
 }
 /*#region Main_Page_Buttons*/
-#mBT {
-    font-size: 2.5rem;
-    top: 1rem;
-    left: 1.5rem;
+#mBT { /*Controls button text top*/
+    font-size: 2.5rem; /*Sets local font size*/
+    top: 1rem; /*Moves Object Relative to the top of the window*/
+    left: 1.5rem; /*Moves Object Relative to the left side of the window*/
 }
-#mBL {
-    font-size: 2.5rem;
-    bottom: -0.7rem;
-    left: 6rem;
+#mBL { /*Controls button text left*/
+    font-size: 2.5rem; /*Sets local font size*/
+    bottom: -0.7rem; /*Moves Object Relative to the bottom of the window*/
+    left: 6rem; /*Moves Object Relative to the left side of the window*/
 }
-#mBR {
-    font-size: 2.5rem;
-    right: 6rem;
-    bottom: -2.5rem;
+#mBR { /*Controls button text right*/
+    font-size: 2.5rem; /*Sets local font size*/
+    right: 6rem; /*Moves Object Relative to the right side of the window*/
+    bottom: -2.5rem; /*Moves Object Relative to the bottom of the window*/
 }
-#mBB {
-    font-size: 2.5rem;
-    top: -8rem;
+#mBB { /*Controls button text nottom*/
+    font-size: 2.5rem; /*Sets local font size*/
+    top: -8rem; /*Moves Object Relative to the top of the window*/
 }
-#mBRW {
-    font-size: 2.5rem;
-    right: 6rem;
-    bottom: -1.2rem;
+#mBRW { /*Controls button text right on watchlist page*/
+    font-size: 2.5rem; /*Sets local font size*/
+    right: 6rem; /*Moves Object Relative to the right side of the window*/
+    bottom: -1.2rem; /*Moves Object Relative to the bottom of the window*/
 }
-#mBBL {
-    font-size: 2.5rem;
-    bottom: 1.5rem;
-    left: 1rem;
-}	
-#nAT{
+#mBBL { /*Controls button text Bottom on demo page*/
+    font-size: 2.5rem; /*Sets local font size*/
+    bottom: 1.5rem; /*Moves Object Relative to the bottom of the window*/
+    left: 1rem; /*Moves Object Relative to the left side of the window*/
 }
-#nAL{
-	transform: rotate(270deg);
+#nAL { /*Controls arrow image left*/
+    transform: rotate(270deg); /*Rotates Image*/
 }
-#nAR{
-	transform: rotate(90deg);
+#nAR { /*Controls arrow image right*/
+    transform: rotate(90deg); /*Rotates Image*/
 }
-#nAB{
-	transform: rotate(180deg);
+#nAB { /*Controls arrow image bottom*/
+    transform: rotate(180deg); /*Rotates Image*/
 }
-#topButtonAni {
-    position: absolute;
-    left: 46.5vw;
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
+#topButtonAni { /*Access the arrow and text for top button*/
+    position: absolute; /*Sets positioning to absolute*/
+    left: 46.5vw; /*Moves Object Relative to the left side of the window*/
+    transition: all 0.2s ease-in-out; /*Sets button transition animation*/
+    -moz-transition: all 0.2s ease-in-out; /*Sets button transition animation, mozilla*/
+    -webkit-transition: all 0.2s ease-in-out; /*Sets button transition animation, webkit*/
 }
-#topButtonAni:hover{ 
-	transform: scale(1.1); 
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
+#topButtonAni:hover{ /*# Access the item with the id specififed then takes sub class/action of hover*/
+	transform: scale(1.1); /*Sets button scale for end goal in animation*/
+    -moz-transform: scale(1.1); /*Sets button scale for end goal in animation, mozilla*/
+    -webkit-transform: scale(1.1); /*Sets button scale for end goal in animation, webkit*/
 	
 }
-#leftButtonAni {
-    position: absolute;
-    top: 46vh;
-    left: -1vw;
-    transition: all 0.2s ease-in-out;
+#leftButtonAni { /*Access the arrow and text for top button*/
+    position: absolute; /*Sets positioning to absolute*/
+    top: 46vh; /*Moves Object Relative to the top of the window*/
+    left: -1vw; /*Moves Object Relative to the left side of the window*/
+    transition: all 0.2s ease-in-out; /*Sets button transition animation*/
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
 }
-#leftButtonAni:hover {
-    transform: scale(1.1);
+#leftButtonAni:hover { /*# Access the item with the id specififed then takes sub class/action of hover*/
+    transform: scale(1.1); /*Sets button scale for end goal in animation*/
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
 }
-#rightButtonAni {
-    position: absolute;
-    top: 45vh;
-    right: -1vw;
-    transition: all 0.2s ease-in-out;
+#rightButtonAni { /*Access the arrow and text for top button*/
+    position: absolute; /*Sets positioning to absolute*/
+    top: 45vh; /*Moves Object Relative to the top of the window*/
+    right: -1vw; /*Moves Object Relative to the right side of the window*/
+    transition: all 0.2s ease-in-out; /*Sets button transition animation*/
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
 }
-#rightButtonAni:hover{ 
-	transform: scale(1.1);  
+#rightButtonAni:hover{ /*# Access the item with the id specififed then takes sub class/action of hover*/
+	transform: scale(1.1);   /*Sets button scale for end goal in animation*/
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
 }
-#bottomButtonAni {
-    position: absolute;
-    left: 46.5vw;
-    top: 90vh;
-    transition: all 0.2s ease-in-out;
+#bottomButtonAni { /*Access the arrow and text for top button*/
+    position: absolute; /*Sets positioning to absolute*/
+    left: 46.5vw; /*Moves Object Relative to the left side of the window*/
+    top: 90vh; /*Moves Object Relative to the top of the window*/
+    transition: all 0.2s ease-in-out; /*Sets button transition animation*/
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
 }
-#bottomButtonAni:hover{ 
-	transform: scale(1.1);  
+#bottomButtonAni:hover{/*Access the arrow and text for top button in hover state*/
+	transform: scale(1.1); /*Sets button scale for end goal in animation*/  
 	-moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
 }
-.mainButton {
-    position: absolute;
-    font-size: 2rem;
-    color: #ffffff;
+.mainButton { /*Access the items with the class specififed atttached to text part of buttons*/
+    position: absolute; /*Sets positioning to absolute*/
+    font-size: 2rem; /*Sets local font size*/
+    color: #ffffff; /*Sets text colour*/
 }
-.navArrow{
-	position: relative;
-	width: 9rem;
-	height: 5rem;
+.navArrow { /*Access the items with the class specififed attached to arrow part of buttons*/
+    position: relative; /*Sets positioning to relative*/
+    width: 9rem; /*Sets the width of the current object*/
+    height: 5rem; /*Sets the height of the current object*/
 }
 /*#endregion */
 /*#region Contact Page*/
-#contactTitle {
-    position: relative;
-    font-size: 72px;
-    right: 3rem;
+#contactTitle { /*Access the title for contact us*/
+    position: relative; /*Sets positioning to relative*/
+    font-size: 72px; /*Sets local font size*/
+    right: 3rem; /*Moves Object Relative to the right side of the window*/
 }
-#bugTitle{
-	position:relative;
-	font-size: 72px;
-    right: 1rem;
+#bugTitle { /*Access the title for bug report*/
+    position: relative; /*Sets positioning to relative*/
+    font-size: 72px; /*Sets local font size*/
+    right: 1rem; /*Moves Object Relative to the right side of the window*/
 }
-.contactSect {
-    position: absolute;
-    top: 20vh;
-    left: 8vw;
-    font-size: 36px;
+.contactSect { /*Access the contact us info block*/
+    position: absolute; /*Sets positioning to absolute*/
+    top: 20vh; /*Moves Object Relative to the top of the window*/
+    left: 8vw; /*Moves Object Relative to the left side of the window*/
+    font-size: 36px; /*Sets local font size*/
     color: #ffffff;
 }
-.bugReportSect {
-    position: absolute;
-    top: 45vh;
-    left: 8vw;
-    font-size: 36px;
+.bugReportSect { /*Access the bug report info block*/
+    position: absolute; /*Sets positioning to absolute*/
+    top: 45vh; /*Moves Object Relative to the top of the window*/
+    left: 8vw; /*Moves Object Relative to the left side of the window*/
+    font-size: 36px; /*Sets local font size*/
 }
-.whiteLink{
-	color: #ffffff;
+.whiteLink { /*Access the contact us page links*/
+    color: #ffffff;/*Sets link colour to white*/
 }
 /*#endregion */
 
 /*#region Watchlist*/
-#theWatchListContainer{
-    position: absolute;
-    list-style: none;
-    text-align: left;
-    top: 20vh;
-    left: 5vw;
-    height: 70%;
-    width: 70%;
-    overflow: hidden;
-    overflow-y: scroll;
-    list-style-type: none;
-    padding: 0;
-    border: 1px solid #ffffff;
+#theWatchListContainer { /*Access The Watchlist container*/
+    position: absolute; /*Sets positioning to absolute*/
+    list-style: none; /*Removes list style*/
+    text-align: left; /*Sets text alignment to left*/
+    top: 20vh; /*Moves Object Relative to the top of the window*/
+    left: 5vw; /*Moves Object Relative to the left side of the window*/
+    height: 70%; /*Sets the height of the current object*/
+    width: 70%; /*Sets the width of the current object*/
+    overflow: hidden; /*Hides overflow*/
+    overflow-y: scroll; /*Sets y overflow to a scroll*/
+    list-style-type: none; /*Removes list style type*/
+    padding: 0; /*Removes padding*/
+    border: 1px solid #ffffff; /*Creates list border*/
 }
-#watchListTitle{
-    position: absolute;
-    font-size: 56px;
-    text-decoration: underline;
-    font-weight: bold; 
-    text-align: left;
-    left: 5vw;
-    top: 9vh;
+#watchListTitle { /*Access the watchlist page title*/
+    position: absolute; /*Sets positioning to absolute*/
+    font-size: 56px; /*Sets local font size*/
+    text-decoration: underline; /*Underlines list title*/
+    font-weight: bold; /*Sets text to bold*/
+    text-align: left; /*Text aligns title left*/
+    left: 5vw; /*Moves Object Relative to the left side of the window*/
+    top: 9vh; /*Moves Object Relative to the top of the window*/
 }
-#theWatchListContainer > li {
-    font-size: 36px;
-    text-align: center;
-    padding: 5px 5px;
-    border-bottom: 1px solid #ffffff;
+#theWatchListContainer > li { /*Access the children of the id with li tag*/
+    font-size: 36px; /*Sets local font size*/
+    text-align: center;/*Aligns text to center*/
+    padding: 5px 5px; /*Sets padding to 5, 5*/
+    border-bottom: 1px solid #ffffff;/*Creates a bottom border*/
 }
-#theWatchListContainer > li > a > img {
-    position: absolute;
-    left: 0vw;
+#theWatchListContainer > li > a > img { /*Access the item with the id specififed then grab the children with li and the children of that with tag a and finally the children the with img tag*/
+    position: absolute; /*Sets positioning to absolute*/
+    left: 0vw; /*Moves Object Relative to the left side of the window*/
  }
-#theWatchListContainer > li > a {
-    color: white;
- }
-#theWatchListContainer > li > a > p {
-    position: relative;
-    padding: 5px 5px;
+#theWatchListContainer > li > a { /*Access the item with the id specififed then grab the children with li and the children of that with tag a*/
+    color: white;/*Set link colour to white*/
 }
-#watchListDivide{
-    position: absolute;
-    top: 20vh;
-    left: 5vw;
-    width: 70vw;
+#theWatchListContainer > li > a > p { /*Access the item with the id specififed then grab the children with li and the children of that with tag a and finally the children with the p tag*/
+    position: relative; /*Sets positioning to relative*/
+    padding: 5px 5px; /*Sets padding to 5, 5*/
 }
-
+#watchListDivide { /*Access the horizontal rule*/
+    position: absolute; /*Sets positioning to absolute*/
+    top: 20vh; /*Moves Object Relative to the top of the window*/
+    left: 5vw; /*Moves Object Relative to the left side of the window*/
+    width: 70vw; /*Sets the width of the current object*/
+}
+#watchlistButtonAni { /*Access the watchlist home button object*/
+    position: absolute; /*Sets positioning to absolute*/
+    top: 45vh; /*Moves Object Relative to the top of the window*/
+    right: -1vw; /*Moves Object Relative to the right side of the window*/
+    transition: all 0.2s ease-in-out; /*Sets button transition animation*/
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+#watchlistButtonAni:hover { /*Access the watchlist home button object in hover state*/
+    transform: scale(1.1); /*Sets button scale for end goal in animation*/
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
 /*#endregion */
 
 /*#region Item-Pages*/
-#itemMBT {
-    font-size: 2rem;
-    top: 2rem;
-    left: 1rem;
+#itemMBT { /*Access the item page text button*/
+    font-size: 2rem; /*Sets local font size*/
+    top: 2rem; /*Moves Object Relative to the top of the window*/
+    left: 1rem; /*Moves Object Relative to the left side of the window*/
 }
-#itemNAT {
-   
+#itemImage { /*Access the item page Image*/
+    position: absolute; /*Sets positioning to absolute*/
+    top: 20vh; /*Moves Object Relative to the top of the window*/
+    left: 5%; /*Moves Object Relative to the left side of the window*/
+    width: 18vw; /*Sets the width of the current object*/
+    height: 52vh; /*Sets the height of the current object*/
 }
-#itemImage {
-    position: absolute;
-    top: 20vh;
-    left: 5%;
-    width: 18vw;
-    height: 52vh;
-}
-#listName{
-    position: absolute;
-    top: -1rem;
-    left: 5%;
-    font-size: 3vw;
+#listName { /*Access the item page title*/
+    position: absolute; /*Sets positioning to absolute*/
+    top: -1rem; /*Moves Object Relative to the top of the window*/
+    left: 5%; /*Moves Object Relative to the left side of the window*/
+    font-size: 3vw; /*Sets local font size*/
     font-weight: bold;
     text-decoration: underline;
 }
-#watchlistButton {
-    position: absolute;
-    top: 75vh;
-    left: 5%;
-    font-size: 1vw;
-    background-color: rebeccapurple;
-    border-color: white;
-    color: white;
-    width: 18vw;
-    height: 6vh;
+#watchlistButton { /*Access the item page watchlist add/remove button*/
+    position: absolute; /*Sets positioning to absolute*/
+    top: 75vh; /*Moves Object Relative to the top of the window*/
+    left: 5%; /*Moves Object Relative to the left side of the window*/
+    font-size: 1vw; /*Sets local font size*/
+    background-color: rebeccapurple; /*Set background colour of button to slightly different purple*/
+    border-color: white; /*Set button border colour to white*/
+    color: white; /*Set button text colour to white*/
+    width: 18vw; /*Sets the width of the current object*/
+    height: 6vh; /*Sets the height of the current object*/
 }
-.descriptionBox {
+.descriptionBox { /*. defines a class, access description box*/
+    text-align: left; /*Aligns text left*/
+    position: absolute; /*Sets positioning to absolute*/
+    top: 18%; /*Moves Object Relative to the top of the window*/
+    left: 25%; /*Moves Object Relative to the left side of the window*/
+    border: 2px solid #ffffff; /*Sets a border*/
+    width: 50%; /*Sets the width of the current object*/
+    height: 50%; /*Sets the height of the current object*/
+    overflow-x: hidden; /*Hides x overflow*/
+    overflow-y: hidden; /*Hides y overflow*/
+    overflow-y: scroll; /*Sets y overflow to scroll function*/
+}
+#descTitle { /*Access the description title*/
+    position: relative; /*Sets positioning to relative*/
+    width: 60%; /*Sets the width of the current object*/
+    left: 2%; /*Moves Object Relative to the left side of the window*/
+}
+#descContent { /*Access the description content*/
+    position: relative; /*Sets positioning to relative*/
+    width: 90%; /*Sets the width of the current object*/
+    left: 2%; /*Moves Object Relative to the left side of the window*/
+}
+#theTrailer { /*Access the item page trailer*/
+    width: 22vw; /*Sets the width of the current object*/
+    height: 12vw; /*Sets the height of the current object*/
+}
+.rgArea { /*Access rating and genre block*/
     text-align: left;
-    position: absolute;
-    top: 18%;
-    left: 25%;
-    border: 2px solid #ffffff;  
-    width: 50%;
-    height: 50%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    overflow-y: scroll;
-}
-#descTitle {
-    position: relative;
-    width: 60%;
-    left: 2%;
-}
-#descContent {
-    position: relative;
-    width: 90%;
-    left: 2%;
-}
-#theTrailer{
-    width: 22vw;
-    height: 12vw;
-}
-.rgArea {
-    text-align: left;
-    position: absolute;
-    top: 18%;
-    left: 77%;
+    position: absolute; /*Sets positioning to absolute*/
+    top: 18%; /*Moves Object Relative to the top of the window*/
+    left: 77%; /*Moves Object Relative to the left side of the window*/
     border: 2px solid #ffffff;
-    width: 20%;
-    height: 50%;
+    width: 20%; /*Sets the width of the current object*/
+    height: 50%; /*Sets the height of the current object*/
 }
-.ratingClass{
-    position: relative;
-    left: 3%;
-    top: 2%;
+.ratingClass { /*Access rating area*/
+    position: relative; /*Sets positioning to relative*/
+    left: 3%; /*Moves Object Relative to the left side of the window*/
+    top: 2%; /*Moves Object Relative to the top of the window*/
 }
-.genreClass {
-    position: relative;
-    left: 3%;
-    top: 35%;
+.genreClass { /*Access Genre area*/
+    position: relative; /*Sets positioning to relative*/
+    left: 3%; /*Moves Object Relative to the left side of the window*/
+    top: 35%; /*Moves Object Relative to the top of the window*/
 }
-.trailerContainer {
-    position: absolute;
-    text-align: left;
-    left: 25%;
-    top: 68%;
+.trailerContainer { /*Access the trailer container*/
+    position: absolute; /*Sets positioning to absolute*/
+    text-align: left; /*Aligns text left*/
+    left: 25%; /*Moves Object Relative to the left side of the window*/
+    top: 68%; /*Moves Object Relative to the top of the window*/
 }
 /*#endregion */ 
 
 /*#region The Index*/
-#theIndex {
-    position: absolute;
-    top: 15vh;
-    max-height: 85vh;
-    max-width: 100vw;
+#theIndex { /*Access the index div block*/
+    position: absolute; /*Sets positioning to absolute*/
+    top: 15vh; /*Moves Object Relative to the top of the window*/
+    max-height: 85vh; /*Sets the max height of the current object*/
+    max-width: 100vw; /*Sets the max width of the current object*/
 }
-#indexMBL {
-    font-size: 2.5rem;
-    bottom: -3.5vh;
-    left: 9.5vh;
-}
-
-#indexNAL {
-    transform: rotate(270deg);
-    left: 0vw;
-    top: 2vh;
+#indexMBL { /*Access the index text button*/
+    font-size: 2.5rem; /*Sets local font size*/
+    bottom: -3.5vh; /*Moves Object Relative to the bottom of the window*/
+    left: 9.5vh; /*Moves Object Relative to the left side of the window*/
 }
 
-#indexHomeButtonAni {
-    position: absolute;
-    transition: all .2s ease-in-out;
-}
-#indexHomeButtonAni:hover {
-    transform: scale(1.1);
-}
-#theIndexContainer {
-    position: relative;
-    list-style: none;
-    text-align: left;
-    height: 80vh;
-    width: 100vw;
-    bottom: 9rem;
-    overflow: hidden;
-    overflow-y: scroll;
-    list-style-type: none;
-    border: 1px solid #ffffff;
-    padding: 0;
-}
-#theIndexContainer > li {
-    display: inline-table;
-    width: 19.72vw;
-    margin: 0;
-    font-size: 24px;
-    text-align: center;
-    box-sizing: border-box;
-    border: 1px solid #ffffff; 
+#indexNAL { /*Access the index arrow button*/
+    transform: rotate(270deg); /*Rotates*/
+    left: 0vw; /*Moves Object Relative to the left side of the window*/
+    top: 2vh; /*Moves Object Relative to the top of the window*/
 }
 
-#theIndexContainer > li:hover {
-    color:white;
+#indexHomeButtonAni { /*Access the index butto animation*/
+    position: absolute; /*Sets positioning to absolute*/
+    transition: all .2s ease-in-out; /*Sets button transition animation*/
+}
+#indexHomeButtonAni:hover { /*Access the item with the id specififed find sub class/action of upon hover*/
+    transform: scale(1.1); /*Sets button scale for end goal in animation*/
+}
+#theIndexContainer { /*Access the index list container*/
+    position: relative; /*Sets positioning to relative*/
+    list-style: none; /*Set list style to none*/
+    text-align: left; /*Align text left*/
+    height: 80vh; /*Sets the height of the current object*/
+    width: 100vw; /*Sets the width of the current object*/
+    bottom: 9rem; /*Moves Object Relative to the bottom of the window*/
+    overflow: hidden; /*Hide overflow*/
+    overflow-y: scroll; /*Set y overflow to scroll function for list*/
+    list-style-type: none; /*Set list style type to none*/
+    border: 1px solid #ffffff; /*Create border to list area*/
+    padding: 0; /*Sets padding to 0*/
+}
+#theIndexContainer > li { /*Access the item with the id specififed find children with tag li*/
+    display: inline-table; /*Displays all li items in a inline table*/
+    width: 19.6vw; /*Sets the width of the current object*/
+    margin: 0; /*Set li item margins to 0*/
+    font-size: 24px; /*Sets local font size*/
+    text-align: center; /*Aligns text to center*/
+    box-sizing: border-box; /*Creates bordered box around each li item*/
+    border: 1px solid #ffffff; /*Sets border parameters*/
 }
 
-#theIndexContainer > li > a {
-    color: white;
-}
-#theIndexContainer > li:nth-child(odd){
-    clear: left;
+#theIndexContainer > li:hover { /*Access the item with the id specififed find children with tag li and find action upon hover*/
+    color: white; /*Sets text colour to white*/
 }
 
-#theIndexContainer > li > a > img {
-    height: 15rem;
-    width: 13rem;
+#theIndexContainer > li > a { /*Access the item with the id specififed find children with tag li then children of them with tag a*/
+    color: white; /*Sets text colour to white*/
+}
+#theIndexContainer > li:nth-child(odd){/*Take each odd child of the object with the id specified*/
+    clear: left; /*Clear padding and margin to the left*/
 }
 
-#theIndexContainer > li > a > p {
-    padding: 5px 5px;
+#theIndexContainer > li > a > img { /*Access the item with the id specififed access li children then a child then img child*/
+    height: 15rem; /*Sets the height of the current object*/
+    width: 13rem; /*Sets the width of the current object*/
+}
+
+#theIndexContainer > li > a > p { /*Access the item with the id specififed access li children then a child then img child*/
+    padding: 5px 5px; /*Sets padding to 5, 5*/
     
 }
-#indexTitle{
-    position: absolute;
-    bottom: 100%;
-    font-size: 400%;
-    left: 41%;
-    text-decoration: underline;
+#indexTitle { /*Access the index page title*/
+    position: absolute; /*Sets positioning to absolute*/
+    bottom: 100%; /*Moves Object Relative to the bottom of the window*/
+    font-size: 3.5rem; /*Sets local font size*/
+    left: 41%; /*Moves Object Relative to the left side of the window*/
+    text-decoration: underline; /*Underlines title*/
 }
-.listCustomiseButtons {
-    position: relative;
-    display: inline-block;
-    font-size: 1.5vw;
-    background-color: rebeccapurple;
-    color: white;
-    border: 1px solid #ffffff;
-    padding: 10px 24px;
-    width: 19.6vw;
+.listCustomiseButtons { /*Access customiser buttons for index list*/
+    position: relative; /*Sets positioning to relative*/
+    display: inline-block; /*Display customiser buttons in inline-block*/
+    font-size: 1.5vw; /*Sets local font size*/
+    background-color: rebeccapurple; /*Set button background to different purple*/
+    color: white; /*Set text colour to white*/
+    border: 1px solid #ffffff; /*Set border parameter*/
+    padding: 10px 24px; /*Set padding to 10, 24*/
+    width: 19.6vw; /*Sets the width of the current object*/
 }
-.listCustomiseButtons button:not(:last-child){
-    border-right: none;/*Prevents a Double border from occuring*/
+.listCustomiseButtons button:not(:last-child){ /*Access the last child so double border doesn't occur*/
+    border-right: none;/*Setrs right border to none and so prevents a Double border from occuring*/
 }
 
 /*This will clear all the floats*/
-.listCustomiseButtons:after{
-    content: "";
-    clear: both;
+.listCustomiseButtons:after{/*Accesses buttons after load*/
+    content: "";/*Sets content to 0 to clear spacing*/
+    clear: both;/*Clears margins to concantenate the buttons*/
 }
 
 /*And why not add a hover background colour because we can*/
-.listCustomiseButtons:hover {
-    background-color: purple;
+.listCustomiseButtons:hover {/*Buttons in hover state*/
+    background-color: purple;/*Change background colour of buttons to a different pruple*/
 }
-#searchTab {/*Positions the searchtab which appears*/
-    position: relative;
-    border: 2px solid #ffffff;
-    background-color: rebeccapurple;
-    width: 19.6vw;
-    left: 79.8vw;
-    z-index: 1;
+#searchTab { /*Positions the searchtab which appears*/
+    position: relative; /*Sets positioning to realtive*/
+    border: 2px solid #ffffff; /*Set border parameters*/
+    background-color: rebeccapurple; /*Sets searchtab background colour to different pruple*/
+    width: 19.6vw; /*Sets the width of the current object*/
+    left: 79.8vw; /*Moves Object Relative to the left side of the window*/
+    z-index: 1;/*Sets the z position of the item to bring it to the front*/
 }
-#searchTab > input{
-    position: relative;
-    top: 85%;
-    width: 90%;
+#searchTab > input{/*Grabs input children of searchtab*/
+    position: relative;/*Sets positioning to relative*/
+    top: 85%;/*Moves Object Relative to the top of the window*/
+    width: 90%;/*Sets the width of the current object*/
 }
 /*endregion*/
 /*region MediaQueries*/
-@media only screen and (max-width: 800px) {
-    .listCustomiseButtons {
-        width: 100%;
-        font-size: 2rem;
+@media only screen and (max-width: 800px) {/*Media query which executes when screen width is 80px or less*/
+    .listCustomiseButtons {/*New acces of customiser buttons*/
+        width: 100%; /*Sets the width of the current object*/
+        font-size: 2rem; /*Sets local font size*/
     }
 
-    #searchTab {
-        width: 100%;
-        left: 0;
+    #searchTab {/*New access of search tab*/
+        width: 100%; /*Sets the width of the current object*/
+        left: 0; /*Moves Object Relative to the left side of the window*/
     }
 
-    #listName {
-        font-size: 2.4rem;
+    #listName {/*New access of list name*/
+        font-size: 2.4rem; /*Sets local font size*/
     }
 
-    #theTrailer {
-        width: 22rem;
-        height: 12rem;
+    #theTrailer {/*New access of the item page trailer*/
+        width: 22rem; /*Sets the wdith of the current object*/
+        height: 12rem; /*Sets the height of the current object*/
     }
 
-    #watchlistButton {
-        font-size: 1.2rem;
+    #watchlistButton { /*New access of watchlist button*/
+        font-size: 1.2rem; /*Sets local font size*/
+        height: 9vh; /*Sets the height of the current object*/
     }
 
-    #watchlistButton {
-        height: 9vh;
+    #rightButtonAni { /*Access right button animation*/
+        top: 60%; /*Moves Object Relative to the top of the window*/
     }
 
-    #rightButtonAni {
-        top: 60%;
+    #leftButtonAni { /*Access left button animation*/
+        top: 70%; /*Moves Object Relative to the top of the window*/
     }
 
-    #leftButtonAni {
-        top: 70%;
+    #watchlistButtonAni { /*Access watchlist button animation*/
+        top: 5%; /*Moves Object Relative to the top of the window*/
     }
 }
