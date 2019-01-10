@@ -1,19 +1,20 @@
+<!DOCTYPE html>
 <html>
-<header>
+<head>
     <title>The Anime Index</title>
-    <link rel="stylesheet" href="..\..\css\styles.css"></link>
+    <link rel="stylesheet" href="..\..\css\styles.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</header>
+</head>
 <body>
+
     <nav>
         <div id="topButtonAni">
-            <a href="../TheIndexPage.html"> <img class="navArrow" id="nAT" src="../../assets/Images/Arrow.png"> <p class="mainButton" id="itemMBT">The Index</p></img></a>
+            <a href="../TheIndexPage.html"> <img class="navArrow" id="itemNAT" src="../../assets/Images/Arrow.png" /> <p class="mainButton" id="itemMBT">The Index</p></a>
         </div>
     </nav>
     <p id="listName">Your Lie In April</p>
     <button id="watchlistButton" onclick="watchButton()" type="button">Add To Watchlist</button>
     <img id="itemImage" src="../../assets/Images/Your Lie In April.jpg" />
-
     <div class="descriptionBox">
         <h1 id="descTitle"><u>Description</u></h1>
         <p id="descContent">
@@ -36,9 +37,8 @@
     </div>
     <div class="trailerContainer">
         <h2><u>Trailer</u></h2>
-        <iframe width="320" height="180" src="https://www.youtube.com/embed/3aL0gDZtFbE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="theTrailer" width="320" height="180" src="https://www.youtube.com/embed/3aL0gDZtFbE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-
 
     <script src="..\..\js\main.js"></script>
 </body>

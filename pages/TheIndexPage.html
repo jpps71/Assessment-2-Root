@@ -1,42 +1,44 @@
+<!DOCTYPE html>
 <html>
-<header>
+<head>
     <title>The Anime Index</title>
-    <link rel="stylesheet" href="..\css\styles.css"></link>
+    <link rel="stylesheet" href="..\css\styles.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-</header>
+</head>
 <body>
     <nav>
         <div id="indexHomeButtonAni">
-            <a href="../index.html"> <img class="navArrow" id="indexNAL" src="../assets/Images/Arrow.png"> <p class="mainButton" id="indexMBL">Home</p></img></a>
+            <a href="../index.html"><img class="navArrow" id="indexNAL" src="../assets/Images/Arrow.png"/> <p class="mainButton" id="indexMBL">Home</p></a>
         </div>
     </nav>
-    <h1 id="indexTitle">The Index</h1>
-    <nav>
-        <button class="listCustomiseButtons" onclick="indexPopularFilter()">Popular</button>
-        <button class="listCustomiseButtons" id="newFilterButton" onclick="newSort()">Newly Added First</button>
-        <button class="listCustomiseButtons" onclick="movieFilter()">Movies</button>
-        <button class="listCustomiseButtons" onclick="comingSoonFilter()">Coming Soon</button>
-        <button class="listCustomiseButtons" id="searchButton" onclick="searchAppear()">Search</button>
-    </nav>
-    <nav>
-        <ul id="theIndexContainer">
-            <li id="listItem" popVal="2" isMovie="0" isComingSoon="0"><a href="Item Pages/Overlord - Item Page.html"><img src="../assets/Images/Overlord.jpg" /><p>Overlord</p></a></li>
+    <div id="theIndex">
+        <h1 id="indexTitle">The Index</h1>
+        <div id="customContainer">
+            <button class="listCustomiseButtons" onclick="indexPopularFilter()">Popular</button>
+            <button class="listCustomiseButtons" id="newFilterButton" onclick="newSort()">Newly Added First</button>
+            <button class="listCustomiseButtons" onclick="movieFilter()">Movies</button>
+            <button class="listCustomiseButtons" onclick="comingSoonFilter()">Coming Soon</button>
+            <button class="listCustomiseButtons" id="searchButton" onclick="searchAppear()">Search</button>
+            <div id="searchTab">
+                <h3>Enter Anime Name In The Search Bar Below</h3>
+                <input id="searchInput" type="search" value="" />
+                <input id="searchSubmit" type="submit" value="Search" onclick="searchEngine('0')" />
+                <input id="searchClear" type="submit" value="Clear Search" onclick="searchEngine('1')" />
+            </div>
+        </div>
+        <div>
+            <ul id="theIndexContainer">
+                <li id="listItem" popVal="2" isMovie="0" isComingSoon="0"><a href="Item Pages/Overlord - Item Page.html"><img src="../assets/Images/Overlord.jpg" /><p>Overlord</p></a></li>
 
-            <li id="listItem" popVal="0" isMovie="0" isComingSoon="0"><a href="Item Pages/Sword Art Online Alicization - Item Page.html"><img src="../assets/Images/Sword Art Online Alicization.jpg" /><p>Sword Art Online Alicization</p></a></li>
+                <li id="listItem" popVal="0" isMovie="0" isComingSoon="0"><a href="Item Pages/Sword Art Online Alicization - Item Page.html"><img src="../assets/Images/Sword Art Online Alicization.jpg" /><p>Sword Art Online Alicization</p></a></li>
 
-            <li id="listItem" popVal="1" isMovie="1" isComingSoon="1"><a href="Item Pages/Your Lie In April - Item Page.html"><img src="../assets/Images/Your Lie In April.jpg" /><p>Your Lie In April</p></a></li>
+                <li id="listItem" popVal="1" isMovie="1" isComingSoon="1"><a href="Item Pages/Your Lie In April - Item Page.html"><img src="../assets/Images/Your Lie In April.jpg" /><p>Your Lie In April</p></a></li>
 
-            <li id="listItem" popVal="3" isMovie="0" isComingSoon="0"><a href="Item Pages/Ancient Magus Bride - Item Page.html"><img src="../assets/Images/Ancient Magus Bride.jpg" /><p>Ancient Magus Bride</p></a></li>
+                <li id="listItem" popVal="3" isMovie="0" isComingSoon="0"><a href="Item Pages/Ancient Magus Bride - Item Page.html"><img src="../assets/Images/Ancient Magus Bride.jpg" /><p>Ancient Magus Bride</p></a></li>
 
-            <li id="listItem" popVal="4" isMovie="1" isComingSoon="0"><a href="Item Pages/Dragon Ball Super - Item Page.html"><img src="../assets/Images/Dragon Ball Super.jpg" /><p>Dragon Ball Super</p></a></li>
-        </ul>
-    </nav>
-
-    <div id="searchTab">
-        <h3>Enter Anime Name In The Search Bar Below</h3>
-        <input id="searchInput" type="search" value="" />
-        <input id="searchSubmit" type="submit" value="Search" onclick="searchEngine('0')" />
-        <input id="searchClear" type="submit" value="Clear Search" onclick="searchEngine('1')" />
+                <li id="listItem" popVal="4" isMovie="1" isComingSoon="0"><a href="Item Pages/Dragon Ball Super - Item Page.html"><img src="../assets/Images/Dragon Ball Super.jpg" /><p>Dragon Ball Super</p></a></li>
+            </ul>
+        </div>
     </div>
 
 
